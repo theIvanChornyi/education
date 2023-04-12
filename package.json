@@ -1,7 +1,6 @@
 {
 	"name": "education",
 	"version": "0.1.0",
-	"homepage": "https://theIvanChornyi.github.io/education",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
@@ -29,7 +28,7 @@
 	},
 	"scripts": {
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "netlify deploy -p",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
