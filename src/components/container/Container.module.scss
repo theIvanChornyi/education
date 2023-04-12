@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    min-width: $mobile;
+}
+
+@media screen and (min-width: $mobile) {
+    .container {
+        width: $mobile;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .container {
+        width: $tablet;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .container {
+        width: $desktop;
+    }
+}

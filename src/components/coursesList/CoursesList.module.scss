@@ -1,0 +1,30 @@
+@import '../../variables.scss';
+
+.message{
+    padding: 80px;
+    display: block;
+    text-align: center;
+    text-transform:uppercase;
+    color: $accent-color;
+}
+
+.list{
+    display: grid;
+    justify-content: center;
+    padding: 80px 0 30px;
+    gap: 20px;
+
+    @media screen and (min-width: $tablet) {
+            grid-template-columns: repeat(auto-fill, 200px);
+        }
+
+    @media screen and (min-width: $tablet) {
+        grid-template-columns: repeat(auto-fill, 250px);
+    }
+}
+.item{
+    padding: 15px;
+    width: 100%;
+    background-color: #73c5ff49;
+    border-radius: 8px;
+}

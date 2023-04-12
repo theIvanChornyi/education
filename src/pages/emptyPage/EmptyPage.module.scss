@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+.section{
+    padding: 120px 0;
+    text-align: center;
+}
+.title{
+    font-family: 'Nunito Sans', sans-serif;
+    color: $accent-color;
+    font-size: 60px;
+}
+.text{
+    font-family: 'Nunito Sans', sans-serif;
+    color:$text-color;
+    font-size: 60px;
+
+}
+.link{
+    color: $accent-color
+}

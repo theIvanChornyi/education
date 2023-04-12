@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { lazy, Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Loader from './components/loader/Loader';
+import SharedLayout from './components/sharedLayout/SharedLayout';
+import Courses from './pages/courses/Courses';
+const Home = lazy(() => import('./pages/home/Home'));
+const EmptyPage = lazy(() => import('./pages/emptyPage/EmptyPage'));
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Suspense fallback={<Loader />}>
+			<Routes>
+				<Route path="/" element={<SharedLayout />}>
+					<Route index element={<Home />} />
+					<Route path="/courses" element={<Courses />} />
+					<Route path="*" element={<EmptyPage />} />
+				</Route>
+			</Routes>
+		</Suspense>
+	);
 }
 
 export default App;

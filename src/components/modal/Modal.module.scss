@@ -1,0 +1,79 @@
+@import '../../variables.scss';
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: $mobile;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(142.4deg,
+            rgba(138, 98, 208, .7) 5%,
+            rgba(126, 124, 223, .7) 28.2%,
+            rgba(109, 206, 236, .7) 62.5%,
+            rgba(176, 239, 244, .7) 89.1%);
+    ;
+    z-index: 1200;
+    &-enter {
+        opacity: 1;
+        transition: opacity 300ms;
+    }
+
+    &-enter-active {
+        opacity: 0;
+    }
+
+    &-exit {
+        opacity: 1;
+    }
+
+    &-exit-active {
+        opacity: 0;
+        transition: opacity 300ms;
+    }
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 300px;
+
+    max-width: 950px;
+    max-height: 600px;
+    
+    padding: 1rem;
+    transform: translate(-50%,-50%);
+    border-radius:8px;
+
+    background:#fff;
+
+    &__btn{
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+
+        width: 30px;
+        height: 30px;
+
+        border: 3px solid $btn-border-color;
+        border-radius: 50%;
+        background-color: $btn-bg;
+        color: #fff;
+        transition: background-color $hover-function $hover-time;
+        cursor: pointer;
+        &:hover,&:focus{
+            background-color:$btn-hover-bg
+        }
+    }
+}

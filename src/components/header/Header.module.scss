@@ -1,0 +1,38 @@
+@import '../../variables.scss';
+.header{
+   padding-top: 20px;
+}
+.nav{
+    &__list {
+        display: flex;
+        column-gap: calc(2vh + 2vw);
+        justify-content: center;
+    }
+   
+    &__btn {
+        padding: 6px 10px;
+        background: transparent;
+        border: none;
+
+        color: inherit;
+		font-size: $font-bodyS;
+		line-height: $font-bodyH;
+
+        cursor: pointer;
+
+        transition: color $hover-function $hover-time;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+        &__link {
+            @extend .nav__btn;
+            display: inline-block;
+            text-decoration: none;
+
+            &_active{
+                color: $accent-color;
+            }
+        }
+}

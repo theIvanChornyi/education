@@ -1,0 +1,20 @@
+@import '../../variables.scss';
+.button{
+    align-self: center;
+    display: inline-block;
+    padding: .5rem 1rem ;
+
+    background-color: $btn-bg;
+    border: none;
+    border-radius: $btn-radius;
+
+    color:#fff;
+
+    box-shadow :$btn-shadow;
+    transition: background-color $hover-function $hover-time,box-shadow $hover-function $hover-time;
+    &:hover,&:focus{
+        background-color:$btn-hover-bg;
+        box-shadow:$btn-hover-shadow;
+        cursor: pointer;
+    }
+}

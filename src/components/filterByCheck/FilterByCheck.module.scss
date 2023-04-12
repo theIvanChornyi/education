@@ -1,0 +1,66 @@
+@import '../../variables.scss';
+.filters{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    margin-top: 30px;
+    justify-content: center;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+.list{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    @media screen and (min-width: $tablet) {
+        gap:1rem;
+    }
+}
+.item{
+
+}
+.label{
+    align-self: center;
+    display: inline-block;
+    padding: .2rem .5rem;
+
+    @media screen and (min-width: $tablet) {
+        padding: .5rem 1rem;
+    }
+   
+
+    background-color: $disabled-color;
+    border: none;
+    border-radius: $btn-radius;
+
+    color: $accent-color;
+
+    box-shadow: $btn-shadow;
+    transition: background-color $hover-function $hover-time, box-shadow $hover-function $hover-time;
+
+    &:hover,
+    &:focus {
+        background-color: $btn-hover-bg;
+        box-shadow: $btn-hover-shadow;
+        color: #fff;
+        cursor: pointer;
+    }
+    .input:checked + &{
+        background-color: $dark;
+        color: #fff;
+    }
+
+
+}
+.input{
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+}

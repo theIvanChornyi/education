@@ -1,0 +1,37 @@
+@import '../../variables.scss';
+
+.footer{
+	min-width: $mobile;
+    padding-top: 60px;
+	padding-bottom: 25px;
+	background:linear-gradient( rgba(255, 255, 255, 0.5), #FFFFFF 42.19%  ), linear-gradient(142.4deg,
+	rgba(138, 98, 208, .4) 5%,
+	rgba(126, 124, 223, .4) 28.2%,
+	rgba(109, 206, 236, .4) 62.5%,
+	rgba(176, 239, 244, .4) 89.1%);
+
+
+	&__text {
+		color: $text-color;	
+		text-align: center;
+	}
+}
+
+.list{
+	display: flex;
+	justify-content: center;
+	column-gap: 1rem;
+	margin-top: 16px;
+
+
+	&__item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		transition: transform $hover-function $hover-time;
+		&:hover,&:focus{
+			transform: scale(1.2);
+		}
+	}
+}

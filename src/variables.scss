@@ -1,0 +1,31 @@
+// Transitions
+$hover-function: cubic-bezier(0.4, 0, 0.2, 1);
+$hover-time: 250ms;
+
+// Fonts
+$accent-color :#0E91EF;
+$text-color:#98A1B3;
+$dark:#0B83D9;
+$disabled-color :#E1E2E6;
+
+$font-bodyS: 1rem;
+$font-titleS: 1.5rem;
+
+$font-bodyH: 1.5;
+$font-titleH: 1.25;
+
+// Button
+$btn-bg:#0E91EF;
+$btn-hover-bg:#3EACFA;
+$btn-border-color :#0B83D9;
+
+$btn-shadow: 0px 4px 8px rgba(0, 15, 115, 0.08);
+$btn-hover-shadow:0px 6px 12px rgba(0, 15, 115, 0.12);
+
+$btn-radius:8px;
+
+// Screen
+
+$mobile:480px;
+$tablet: 768px;
+$desktop: 1200px;
