@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/education/static/css/main.e9012a0a.css",
+    "main.js": "/education/static/js/main.9d95b447.js",
+    "static/css/516.ba951ac3.chunk.css": "/education/static/css/516.ba951ac3.chunk.css",
+    "static/js/516.d7895c99.chunk.js": "/education/static/js/516.d7895c99.chunk.js",
+    "static/css/525.15dbea75.chunk.css": "/education/static/css/525.15dbea75.chunk.css",
+    "static/js/525.a47a4bdd.chunk.js": "/education/static/js/525.a47a4bdd.chunk.js",
+    "static/media/hero1.jpg": "/education/static/media/hero1.0a018dec2b1cdd50a985.jpg",
+    "index.html": "/education/index.html",
+    "main.e9012a0a.css.map": "/education/static/css/main.e9012a0a.css.map",
+    "main.9d95b447.js.map": "/education/static/js/main.9d95b447.js.map",
+    "516.ba951ac3.chunk.css.map": "/education/static/css/516.ba951ac3.chunk.css.map",
+    "516.d7895c99.chunk.js.map": "/education/static/js/516.d7895c99.chunk.js.map",
+    "525.15dbea75.chunk.css.map": "/education/static/css/525.15dbea75.chunk.css.map",
+    "525.a47a4bdd.chunk.js.map": "/education/static/js/525.a47a4bdd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9012a0a.css",
+    "static/js/main.9d95b447.js"
+  ]
+}
